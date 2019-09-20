@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07. Knight Game", "07. Knig
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "08. Bombs", "08. Bombs\08. Bombs.csproj", "{66D19520-F9C3-4E50-B22D-7989FED7B0BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. Miner", "09. Miner\09. Miner.csproj", "{912107EE-8486-403E-81FE-D432C0E74B40}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09. Miner", "09. Miner\09. Miner.csproj", "{912107EE-8486-403E-81FE-D432C0E74B40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. Radioactive Bunnies", "10. Radioactive Bunnies\10. Radioactive Bunnies.csproj", "{2A681805-C84C-4719-8BC3-811DD3DB551C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10. Radioactive Bunnies", "10. Radioactive Bunnies\10. Radioactive Bunnies.csproj", "{2A681805-C84C-4719-8BC3-811DD3DB551C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. Snake Moves II", "05. Snake Moves II\05. Snake Moves II.csproj", "{BA647871-A7A6-4DF1-ABBA-383B794DC6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11. Jagged Array Manipulator", "11. Jagged Array Manipulator\11. Jagged Array Manipulator.csproj", "{6C77070B-4E9A-432B-8D3A-411EA1F3D33C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{2A681805-C84C-4719-8BC3-811DD3DB551C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A681805-C84C-4719-8BC3-811DD3DB551C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A681805-C84C-4719-8BC3-811DD3DB551C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA647871-A7A6-4DF1-ABBA-383B794DC6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA647871-A7A6-4DF1-ABBA-383B794DC6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA647871-A7A6-4DF1-ABBA-383B794DC6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA647871-A7A6-4DF1-ABBA-383B794DC6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C77070B-4E9A-432B-8D3A-411EA1F3D33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C77070B-4E9A-432B-8D3A-411EA1F3D33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C77070B-4E9A-432B-8D3A-411EA1F3D33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C77070B-4E9A-432B-8D3A-411EA1F3D33C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
