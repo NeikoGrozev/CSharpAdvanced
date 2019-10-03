@@ -7,11 +7,11 @@
     {
         static void Main()
         {
-            using (StreamReader reader = new StreamReader(@"F:\C#2019\Advanced\Exercises\11. Streams, Files and Directories - Lab\01. Odd lines\input.txt"))
+            using (StreamReader reader = new StreamReader("../../../input.txt"))
             {
                 int count = 0;
 
-                using (StreamWriter writer = new StreamWriter(@"F:\C#2019\Advanced\Exercises\11. Streams, Files and Directories - Lab\01. Odd lines\output.txt"))
+                using (StreamWriter writer = new StreamWriter("../../../output.txt"))
 
                     while (true)
                     {

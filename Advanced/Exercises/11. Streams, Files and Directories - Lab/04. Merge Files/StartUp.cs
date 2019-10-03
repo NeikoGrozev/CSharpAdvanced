@@ -11,7 +11,7 @@
             List<string> firstList = new List<string>();
             List<string> secondList = new List<string>();
 
-            using (StreamReader readFirstFile = new StreamReader(@"F:\C#2019\Advanced\Exercises\11. Streams, Files and Directories - Lab\04. Merge Files\FileOne.txt"))
+            using (StreamReader readFirstFile = new StreamReader("../../../FileOne.txt"))
             {
                 while (true)
                 {
@@ -26,7 +26,7 @@
                 }
             }
 
-            using (StreamReader readSecondFile = new StreamReader(@"F:\C#2019\Advanced\Exercises\11. Streams, Files and Directories - Lab\04. Merge Files\FileTwo.txt"))
+            using (StreamReader readSecondFile = new StreamReader("../../../FileTwo.txt"))
             {
                 while (true)
                 {
@@ -41,7 +41,7 @@
                 }
             }
 
-            using (StreamWriter witer = new StreamWriter(@"F:\C#2019\Advanced\Exercises\11. Streams, Files and Directories - Lab\04. Merge Files\output.txt"))
+            using (StreamWriter witer = new StreamWriter("../../../output.txt"))
             {
                 for (int i = 0; i < firstList.Count; i++)
                 {

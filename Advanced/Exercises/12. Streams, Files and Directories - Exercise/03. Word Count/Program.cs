@@ -1,10 +1,10 @@
 ﻿namespace Word_Count
 {
     using System;
-    using System.Collections.Generic; 
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-   
+
 
     class StartUp
     {
@@ -13,7 +13,7 @@
             List<string> words = new List<string>();
             List<string> text = new List<string>();
 
-            using (StreamReader readWords = new StreamReader("../../../words.txt"))
+            using (StreamReader readWords = new StreamReader(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\03. Word Count\words.txt"))
             {
                 while (true)
                 {
@@ -34,7 +34,7 @@
                 }
             }
 
-            using (StreamReader readtext = new StreamReader("../../../text.txt"))
+            using (StreamReader readtext = new StreamReader(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\03. Word Count\text.txt"))
             {
                 while (true)
                 {
@@ -46,7 +46,7 @@
                     }
 
                     string[] currentWords = input
-                        .Split(new string[] { ".", ",", "-", " ", "...", "?", "!"}, StringSplitOptions.RemoveEmptyEntries);
+                        .Split(new string[] { ".", ",", "-", " ", "...", "?", "!" }, StringSplitOptions.RemoveEmptyEntries);
 
                     foreach (var item in currentWords)
                     {
@@ -73,11 +73,19 @@
                 }
             }
 
+            using (StreamWriter witer = new StreamWriter(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\03. Word Count\actualResult.txt"))
+            {
+                foreach (var item in dict)
+                {
+                    witer.WriteLine($"{item.Key} - {item.Value}");
+                }
+            }
+
             dict = dict
                 .OrderByDescending(x => x.Value)
                 .ToDictionary(x => x.Key, y => y.Value);
 
-            using (StreamWriter witer = new StreamWriter("../../../output.txt"))
+            using (StreamWriter witer = new StreamWriter(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\03. Word Count\expectedResult.txt"))
             {
                 foreach (var item in dict)
                 {
