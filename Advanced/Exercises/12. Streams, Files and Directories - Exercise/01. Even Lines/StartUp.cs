@@ -10,9 +10,9 @@
         {
             int count = 0;
 
-            using (StreamWriter writer = new StreamWriter(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\01. Even Lines\output.txt"))
+            using (StreamWriter writer = new StreamWriter("../../../output.txt"))
             {
-                using (StreamReader reader = new StreamReader(@"F:\C#2019\Advanced\Exercises\12. Streams, Files and Directories - Exercise\01. Even Lines\text.txt"))
+                using (StreamReader reader = new StreamReader("../../../text.txt"))
                 {
                     while (true)
                     {
