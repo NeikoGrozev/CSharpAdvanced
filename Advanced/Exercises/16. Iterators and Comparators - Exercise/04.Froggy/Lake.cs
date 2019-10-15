@@ -2,6 +2,7 @@
 {
     using System.Collections;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations.Schema;
 
     public class Lake : IEnumerable<int>
     {
@@ -14,7 +15,7 @@
 
         public IEnumerator<int> GetEnumerator()
         {
-            for (int i = 0; i < froggyStone.Count; i += 2)
+            for (int i = 0; i < this.froggyStone.Count; i += 2)
             {
                 if (i % 2 == 0)
                 {
@@ -22,7 +23,18 @@
                 }
             }
 
-            for (int i = froggyStone.Count - 1; i >= 0; i--)
+            int num;
+
+            if (this.froggyStone.Count % 2 == 0)
+            {
+                num = 1;
+            }
+            else
+            {
+                num = 2;
+            }
+
+            for (int i = this.froggyStone.Count - num; i >= 0; i-=2)
             {
                 if (i % 2 == 1)
                 {
