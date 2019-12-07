@@ -8,8 +8,7 @@
     {
         public ConsoleAppender(ILayout layout)
             :base(layout)
-        {
-            this.Counter++;
+        {         
         }                
 
         public override void Append(string dateTime, ReportLevel reportLevel, string message)

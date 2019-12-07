@@ -9,8 +9,7 @@
         public FileAppender(ILayout layout, ILogFile logFile)
            : base(layout)
         {           
-            this.LogFile = logFile;
-            this.Counter++;
+            this.LogFile = logFile;         
         }      
 
         public ILogFile LogFile { get; }
