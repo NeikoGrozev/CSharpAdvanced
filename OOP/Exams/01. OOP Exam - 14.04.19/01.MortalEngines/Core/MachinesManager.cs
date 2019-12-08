@@ -42,7 +42,7 @@
             }
             else
             {
-                return string.Format(OutputMessages.MachineHasPilotAlready, name);
+                return string.Format(OutputMessages.MachineExists, name);
             }
         }
 
