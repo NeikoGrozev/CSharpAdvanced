@@ -18,6 +18,10 @@
             CheckPlayerIsBeginner(attackPlayer);
             CheckPlayerIsBeginner(enemyPlayer);
 
+            attackPlayer.Health += attackPlayer.CardRepository.Cards.Sum(x => x.HealthPoints);
+            enemyPlayer.Health += enemyPlayer.CardRepository.Cards.Sum(x => x.HealthPoints);
+
+
             while (true)
             {
                 int attackPlayerAllDamage = attackPlayer.CardRepository.Cards.Sum(x => x.DamagePoints);
